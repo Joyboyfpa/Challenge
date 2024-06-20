@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main id="caja-encriptado">
+        <img id="alura-logo" src="./imagenes/Imagen2.png" alt="">
+        <div id="caja-texto">
+            <input id="input-texto" type="text" placeholder="Ingrese el texto aquí">
+            <div id="subcaja-texto">
+                <div id="advertencia">
+                    <img src="./imagenes/advertencia.png" alt="">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div id="caja-botones">
+                    <button id="button-encriptar" type="submit" onclick="Encriptar()">Encriptar</button>
+                    <button id="button-desencriptar" type="submit" onclick="Desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <div id="caja-resultado">
+            <!-- <div id="subcaja-resultado">
+                <img id="imagen-busqueda" src="./imagenes/Imagen1.jpg" alt="">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div id="subcaja-resultado"> -->
+        </div>
+    </main>
+    <script src="/index.js"></script>
+</body>
+
+</html>
