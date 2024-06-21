@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(243,245,252);
+  background-color: rgb(243, 245, 252);
 }
 #caja-encriptado {
   display: flex;
@@ -38,12 +38,12 @@ body {
   width: 600px;
   border: none;
   outline: none;
-  background-color: rgb(243,245,252);
-  color: rgb(10,56,113);
+  background-color: rgb(243, 245, 252);
+  color: rgb(10, 56, 113);
   font-size: 40px;
 }
 #input-texto::placeholder {
-  color: rgb(10,56,113);
+  color: rgb(10, 56, 113);
   font-size: 40px;
 }
 #caja-resultado {
@@ -74,7 +74,7 @@ body {
 }
 #button-encriptar {
   color: white;
-  background-color: rgb(10,56,113);
+  background-color: rgb(10, 56, 113);
   height: 70px;
   width: 300px;
   border: none;
@@ -82,20 +82,100 @@ body {
   font-size: 15px;
 }
 #button-desencriptar {
-  color: rgb(10,56,113);
-  background-color: rgb(216,223,232);
+  color: rgb(10, 56, 113);
+  background-color: rgb(216, 223, 232);
   height: 70px;
   width: 300px;
-  border: 1px rgb(10,56,113) solid;
+  border: 1px rgb(10, 56, 113) solid;
   border-radius: 25px;
   font-size: 15px;
 }
 #button-copiar {
-  color: rgb(10,56,113);
+  color: rgb(10, 56, 113);
   background-color: white;
   height: 70px;
   width: 300px;
-  border: 1px rgb(10,56,113) solid;
+  border: 1px rgb(10, 56, 113) solid;
   border-radius: 25px;
   font-size: 15px;
 }
+/* CELULARES */
+@media (max-width: 425px) {
+  #caja-encriptado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #input-texto {
+    margin-top: 100px;
+    height: 50px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(243, 245, 252);
+    color: rgb(10, 56, 113);
+    font-size: 30px;
+    padding-left: 60px;
+  }
+  #input-texto::placeholder {
+    color: rgb(10, 56, 113);
+    font-size: 30px;
+  }
+  #subcaja-texto {
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+  #caja-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #imagen-busqueda{
+    display: none;
+  }
+  #caja-resultado {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 6px 12px rgba(210, 204, 204, 0.653);
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 50px;
+    overflow: hidden;
+  }
+  #subcaja-resultado{
+    width: 70%;
+  }
+  #subcaja-resultado h2{
+    text-align: center;
+  }
+  #subcaja-resultado p{
+    text-align: center;
+  }
+  #subcaja-resultado2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+#subcaja-resultado2 p{
+  padding-top: 50px;
+}
+#button-copiar {
+  color: rgb(10, 56, 113);
+  background-color: white;
+  height: 70px;
+  width: 300px;
+  border: 1px rgb(10, 56, 113) solid;
+  border-radius: 25px;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+}
+
